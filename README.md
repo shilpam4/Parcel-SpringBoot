@@ -11,7 +11,7 @@ Each folder has a project.
 --------------------------------------------------------
 *Project Architecture*
 
-charts-parcel ![charts-parcel](charts - parcel.jpeg)
+charts-parcel ![charts-parcel](https://github.com/shilpam4/Parcel-SpringBoot/blob/3fd175e4690d471ed3c12027c83e267d449bccdf/charts%20-%20parcel.jpeg)
 
 *Rest Api Calls*
 PFA txt "Rest API Calls Parcel.txt*
