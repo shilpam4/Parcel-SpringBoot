@@ -11,7 +11,7 @@ Each folder has a project.
 --------------------------------------------------------
 *Project Architecture*
 
-charts-parcel [charts-parcel](charts - parcel.jpeg)
+charts-parcel ![charts-parcel](charts - parcel.jpeg)
 
 *Rest Api Calls*
 PFA txt "Rest API Calls Parcel.txt*
