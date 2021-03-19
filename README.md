@@ -11,7 +11,7 @@ Each folder has a project.
 --------------------------------------------------------
 *Project Architecture*
 
-charts-parcel https://github.com/shilpam4/Parcel-SpringBoot/blob/c1a5febe9914fb2a10a6c696da3bd2b63d90f908/charts%20-%20parcel.jpeg
+charts-parcel [alt text](https://github.com/shilpam4/Parcel-SpringBoot/blob/c1a5febe9914fb2a10a6c696da3bd2b63d90f908/charts%20-%20parcel.jpeg)
 
 *Rest Api Calls*
 PFA txt "Rest API Calls Parcel.txt*
