@@ -1,0 +1,11 @@
+{
+  "generator-springboot": {
+    "appName": "parcel",
+    "packageName": "com.example.parcel",
+    "databaseType": "mysql",
+    "dbMigrationTool": "none",
+    "features": [],
+    "buildTool": "gradle",
+    "packageFolder": "com/example/parcel"
+  }
+}

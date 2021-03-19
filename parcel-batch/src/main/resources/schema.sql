@@ -1,0 +1,44 @@
+DROP TABLE IF EXISTS Parcel,Address,Telephone;
+CREATE TABLE Parcel (
+	parcel_id INT	AUTO_INCREMENT	NOT	NULL	PRIMARY	KEY,
+	parcel_name	VARCHAR(50),
+	ordered_dtm	DATE	NOT	NULL,
+	aadhar_Of_User	VARCHAR(12)	NOT	NULL,
+	last_modified_dtm TIMESTAMP	NOT	NULL	DEFAULT	CURRENT_TIMESTAMP	ON	UPDATE	CURRENT_TIMESTAMP
+);
+CREATE TABLE Address (
+	Address_id	INT	AUTO_INCREMENT	NOT	NULL	PRIMARY	KEY,
+	parcel_id	INT,
+	Flatno	VARCHAR(50),
+	Street	VARCHAR(50),
+	City	VARCHAR(50),
+	State	VARCHAR(50),
+	Country	VARCHAR(50),
+	last_modified_dtm TIMESTAMP	NOT	NULL	DEFAULT	CURRENT_TIMESTAMP	ON	UPDATE	CURRENT_TIMESTAMP,
+	CONSTRAINT	adddress_fk	FOREIGN	KEY	(parcel_id)	REFERENCES	Parcel(parcel_id)	ON	UPDATE	CASCADE
+);
+CREATE TABLE Telephone (
+	Telephone_id	INT	AUTO_INCREMENT	NOT	NULL	PRIMARY	KEY,
+	parcel_id	   	INT,
+	Country_Code	VARCHAR(7),
+	Area_Code	VARCHAR(3),
+	Cntrl_number	VARCHAR(3),
+	Unique_number	VARCHAR(4),
+	last_modified_dtm TIMESTAMP	NOT	NULL	DEFAULT	CURRENT_TIMESTAMP	ON	UPDATE	CURRENT_TIMESTAMP,
+	CONSTRAINT	telephone_fk	FOREIGN	KEY	(parcel_id)	REFERENCES	Parcel(parcel_id)	ON	UPDATE	CASCADE
+);
+CREATE TABLE Filtered_Parcel(
+	unique_id INT	AUTO_INCREMENT	NOT	NULL	PRIMARY	KEY,
+	Parcel_name	VARCHAR(50),
+	ordered_dtm	DATE	NOT	NULL,
+	aadhar_Of_User	VARCHAR(12)	NOT	NULL,
+	Flatno	VARCHAR(50),
+	Street	VARCHAR(50),
+	City	VARCHAR(50),
+	State	VARCHAR(50),
+	Country	VARCHAR(50),
+        Country_Code	VARCHAR(7),
+	Area_Code	VARCHAR(3),
+	Cntrl_number	VARCHAR(3),
+	Unique_number	VARCHAR(4)
+);
